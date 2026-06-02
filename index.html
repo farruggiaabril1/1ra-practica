@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tattoo Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tattoo Studio</h1>
+        <p>Encuntra inspiracion para tu proximo tatuaje</p>
+    </header>
+
+    <main>
+    <section class="hero">
+    <article class="informacion">
+        <h2>Explora distintos estilos</h2>
+        <p>Haz clic en los botones para descubrir diferentes diseños de tatuajes</p>
+        <div class="botones">
+            <button onclick="cambiarTatuaje('lineal')">lineal</button>
+            <button onclick="cambiarTatuaje('minimalista')">minimalista</button>
+            <button onclick="cambiarTatuaje('rellenos')">rellenos</button>
+        </div>
+    <img
+            id="imagentatuaje"
+            src="https://picsum.photos/seed/tattoo1/500/600"
+            alt="Estilos de Tatuaje"
+        />
+        <h3>Diseños de Tatuaje</h3>
+            <div class="boton">
+            <button id="btnGuardar">Guardar Diseño</button>
+    </article>
+    </section>
+
+    <section class="galeria">
+        <h3>Disenos Guardados</h3>
+        <div class="galeria-grid" id="galeriaGrid">
+        <p class="vacia">No hay diseños guardados aún</p>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <p>mi primer proyecto de practica- desarrollo web</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
